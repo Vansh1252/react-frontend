@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Sidebar } from "../components/sidebar";
 import { MetricsCard } from "../components/metricscards";
 import { RevenueTable } from "../components/revenuetable";
-import "../styles/Dashboard.css";
+import "../styles/dashboard.css";
 import { axiosInstance } from "../lib/axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
