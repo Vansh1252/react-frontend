@@ -8,4 +8,7 @@ export default defineConfig({
       '@': '/src'
     }
   },
+  preview: {
+    allowedHosts: ['react-frontend-wzte.onrender.com', 'localhost']
+  }
 })
