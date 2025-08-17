@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../../styles/tutorWeeklyhour.css';
+import '../../styles/tutorweeklyhour.css';
 import { Sidebar } from "../../components/sidebar";
 import { useNavigate } from "react-router-dom";
 import { axiosInstance } from "../../lib/axios";
