@@ -1,0 +1,170 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .modal-container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  .btn-primary {
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1e4db7;
+  }
+  
+  .btn-secondary {
+    background: #f3f4f6;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slots-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .day-column {
+    background: #f9fafb;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  
+  .day-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+  
+  .day-name {
+    font-weight: bold;
+  }
+  
+  .day-slots {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .slot-btn {
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slot-free {
+    background: #d1fae5;
+  }
+  
+  .slot-free:hover {
+    background: #a7f3d0;
+  }
+  
+  .slot-selected {
+    background: #10b981;
+    color: white;
+  }
+  
+  .slot-booked {
+    background: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .no-slots-text {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    font-style: italic;
+    padding: 6px;
+    text-align: center;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  
+  .days-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .day-btn {
+    padding: 6px 12px;
+    border: none;
+    background: #f1f1f1;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .day-btn.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .slots-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .slot {
+    padding: 6px 10px;
+    background: #e0ffe0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .slot.selected {
+    background: #007bff;
+    color: white;
+  }
+  

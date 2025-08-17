@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  background-color: #ffffff;
+}
+
+.header {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  color: #333;
+}
+
+.back-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #0ea5e9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.user-name {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.content {
+  padding: 24px;
+  max-width: 1024px;
+}
+
+/* Progress Bar Styles */
+.progress-section {
+  margin-bottom: 32px;
+}
+
+.progress-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.progress-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.progress-value {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  height: 8px;
+}
+
+.progress-fill {
+  background-color: #0ea5e9;
+  height: 8px;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+  width: 55%;
+}
+
+/* Form Styles */
+.form-section {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.form-select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-select:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.1);
+}
+
+/* Schedule Styles */
+.schedule-section {
+  margin-bottom: 16px;
+}
+
+.schedule-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.day-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.day-checkbox-container {
+  display: flex;
+  align-items: center;
+  width: 80px;
+}
+
+.day-checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  accent-color: #0ea5e9;
+}
+
+.day-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.time-slots {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.unavailable {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.time-slot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.time-input {
+  padding: 4px 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 80px;
+  outline: none;
+}
+
+.time-input:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.1);
+}
+
+.time-separator {
+  color: #6b7280;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button:hover {
+  background-color: #f3f4f6;
+}
+
+.add-button {
+  color: #0ea5e9;
+}
+
+.remove-button {
+  color: #6b7280;
+}
+
+.remove-button:hover {
+  color: #ef4444;
+}
+
+.copy-button {
+  color: #6b7280;
+}
+
+.copy-section {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.copy-label {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.copy-controls {
+  position: relative;
+  display: inline-block;
+}
+
+.copy-select {
+  padding: 4px 8px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  background-color: white;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.apply-button {
+  padding: 4px 12px;
+  font-size: 14px;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: #0284c7;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.cancel-button {
+  padding: 8px 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: white;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cancel-button:hover {
+  background-color: #f9fafb;
+}
+
+.submit-button {
+  padding: 8px 24px;
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submit-button:hover {
+  background-color: #0284c7;
+}
+
+/* SVG Icons */
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
