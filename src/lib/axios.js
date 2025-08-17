@@ -2,10 +2,7 @@ import axios from "axios";
 
 // Create an axios instance with baseURL and credentials
 export const axiosInstance = axios.create({
-  baseURL:
-    import.meta.env.MODE === "development"
-      ? import.meta.env.VITE_API_BASE_URL // Use .env variable in development
-      : "/api", // Use relative path in production
+  baseURL: import.meta.env.VITE_API_BASE_URL,
   withCredentials: true, // Send cookies with requests
 });
 
