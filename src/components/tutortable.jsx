@@ -3,21 +3,21 @@ import React from 'react';
 import moment from 'moment'; // Import moment for date formatting
 import '../styles/TutorTables.css'; // Ensure your CSS is linked
 
-// Assuming this component is named TutorTable and receives 'data' prop
-export const TutorTable = ({ data }) => { // 'data' will now be 'recentStudents' array
+export const TutorTable = ({ data }) => { 
+    console.log(data);
     return (
         <div className="tutor-table-container">
             <h3>Recent Students</h3> {/* Changed title */}
             <table className="tutor-table">
                 <thead>
                     <tr>
-                        <th>Student No.</th> {/* New header */}
-                        <th>Student Name</th> {/* New header */}
-                        <th>Assigned Tutor</th> {/* New header */}
+                        <th>Student No.</th> 
+                        <th>Student Name</th> 
+                        <th>Assigned Tutor</th> 
                         <th>Start Date</th>
-                        <th>End Date</th>   {/* Changed to End Date for student context */}
+                        <th>End Date</th>  
                         <th>Status</th>
-                        <th>Email</th>      {/* New header (optional, but in data) */}
+                        <th>Email</th>     
                     </tr>
                 </thead>
                 <tbody>

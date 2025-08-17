@@ -21,7 +21,7 @@ const navItems = [
   { icon: Users, label: "Students", path: "/student" },
   { icon: GraduationCap, label: "Tutors", path: "/tutor" },
   { icon: DollarSign, label: "Revenue", path: "/total-revenue" },
-  { icon: User, label: "Profile", path: "/profile" },
+  // { icon: User, label: "Profile", path: "/profile" },
   { icon: Settings, label: "Settings", path: "/settings" },
   { icon: LogOut, label: "Logout (This Device)", action: "logoutThisDevice" },
   { icon: LogOut, label: "Logout (All Devices)", action: "logoutAllDevices" },

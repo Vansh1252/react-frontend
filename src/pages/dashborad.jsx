@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Sidebar } from "../components/sidebar";
 import { MetricsCard } from "../components/metricscards";
 import { TutorTable } from "../components/tutortable";
-import "../styles/Dashboard.css";
+import "../styles/dashboard.css";
 import { axiosInstance } from "../lib/axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -18,7 +18,7 @@ export const Dashboard = () => {
         profitWeek: 0,
         profitMonth: 0,
     });
-    const [recentStudents, setRecentStudents] = useState([]); // Correctly named for recent students
+    const [recentstudents, setRecentStudents] = useState([]); // Correctly named for recent students
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [activeNav, setActiveNav] = useState('dashboard');
@@ -28,10 +28,9 @@ export const Dashboard = () => {
         const fetchDashboardData = async () => {
             try {
                 setLoading(true);
-                setError(null);
                 const response = await axiosInstance.get('/auth/dashboard/admin');
 
-                const { totalActiveStudents, onLeaveStudents, totalTutors, profitWeek, profitMonth } = response.data;
+                const { totalActiveStudents, onLeaveStudents, totalTutors, profitWeek, profitMonth, recentStudents } = response.data;
                 setMetrics({
                     totalActiveStudents: totalActiveStudents || 0,
                     onLeaveStudents: onLeaveStudents || 0,
@@ -43,7 +42,6 @@ export const Dashboard = () => {
 
             } catch (err) {
                 console.error('Failed to fetch dashboard data:', err.response?.data || err.message);
-                setError(err.response?.data?.message || err.message || "Failed to load dashboard data. Please check server.");
             } finally {
                 setLoading(false);
             }
@@ -103,7 +101,7 @@ export const Dashboard = () => {
                             />
                         </div>
 
-                        <TutorTable data={recentStudents} />
+                        <TutorTable data={recentstudents} />
                     </div>
                 </main>
             </div>
