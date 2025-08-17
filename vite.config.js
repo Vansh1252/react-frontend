@@ -8,7 +8,4 @@ export default defineConfig({
       '@': '/src'
     }
   },
-  optimizeDeps: {
-    include: ['chart.js', 'react-chartjs-2']
-  },
 })
