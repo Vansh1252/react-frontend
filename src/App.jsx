@@ -24,7 +24,7 @@ import Tutorlist from './pages/tutor/tutorlist';
 import TutorAdd from './pages/tutor/tutorAdd';
 import TutorWeeklyhour from './pages/tutor/tutorweeklyhour';
 import TutorDetails from './pages/tutor/tutordetailsview';
-import { jwtDecode } from "jwt-decode"; // ✅ Import this
+import jwtDecode from "jwt-decode";
 import StudentEdits from './pages/student/StudentEdit';
 import TotalRevenue from './pages/TotalRevenue';
 import Settings from './pages/settings';
