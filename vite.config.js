@@ -11,8 +11,4 @@ export default defineConfig({
   optimizeDeps: {
     include: ['chart.js', 'react-chartjs-2']
   },
-  base: './',
-  build: {
-    outDir: 'dist'
-  }
 })
