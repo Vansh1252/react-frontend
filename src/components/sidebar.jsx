@@ -12,7 +12,7 @@ import {
   LogOut
 } from "lucide-react";
 import { toast } from "react-toastify";
-import "../styles/Sidebar.css";
+import "../styles/sidebar.css";
 import logo from "../assets/logo.png"; // Adjust path if needed
 import { axiosInstance } from "../lib/axios";
 
